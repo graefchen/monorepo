@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yt</title>
+
+    <!-- lite-youtube-embed -->
+    <link rel="stylesheet" href="./lib/lite-yt-embed.css" />
+    <script src="./lib/lite-yt-embed.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .video-grid {
+        --size: 6;
+        display: grid;
+        grid-template-columns: repeat(var(--size), 1fr);
+        gap: 1rem;
+        padding: 1rem;
+      }
+      @media only screen and (max-width: 1441px) {
+        .video-grid {
+          --size: 4;
+        }
+      }
+      @media only screen and (max-width: 769px) {
+        .video-grid {
+          --size: 2;
+        }
+      }
+      @media only screen and (max-width: 426px) {
+        .video-grid {
+          --size: 1;
+        }
+      }
+      .video-grid lite-youtube {
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <section class="video-grid">
+        {% block content %} {% endblock content %}
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

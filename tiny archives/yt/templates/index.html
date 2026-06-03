@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+{# must be set, else it does not work (with csv files) #}
+{% set videos = load_data(path="content/vids.csv") %}
+{% for video in videos.records %}
+<lite-youtube videoid="{{video[2]}}" playable="{{video[0]}}" title="{{video[0]}}">
+  <a href="https://youtu.be/{{video[2]}}" class="lyt-playbtn" title="Play Video: {{video[0]}}">
+    <span class="lyt-visually-hidden">Play Video: {{video[0]}}</span>
+  </a>
+</lite-youtube>
+{% endfor %}
+
+{% endblock content %}
