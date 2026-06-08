@@ -2,7 +2,8 @@ monorepo
 ========
 
 my personal (*and private*) monorepo,
-with many many meny different tools in it (*which are mostly website related*)
+with many many meny different tools in it (*which are mostly website related*),
+but also are partly tools and scripts I use fot the command line.
 
 just full of a bunch of very different code-data things
 

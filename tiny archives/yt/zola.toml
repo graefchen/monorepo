@@ -1,8 +1,5 @@
 # The URL the site will be built for
 base_url = "https://graefchen.github.io/"
 
-# Whether to build a search index to be used later on by a JavaScript library
-# build_search_index = true
-
-[extra]
-# Put all your custom variables here
+generate_sitemap = false
+generate_robots_txt = false
