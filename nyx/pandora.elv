@@ -1,4 +1,4 @@
-# elv pandora v 0.1
+# elv pandora v 0.2
 # this version shall be very different than the nushell version
 # while still implementing more or less the same functions
 #
@@ -49,10 +49,10 @@ fn delete {|name|
 }
 
 fn list {||
-	var lst = [(e:fd -c never ".age" $dir)]
+	var lst = [(e:ls -1 $dir)]
 
 	# TODO: (2026-06-05) Add comment
-	each {|in| echo [(str:split "/" $in)][-1] } $lst
+	each {|in| echo (str:replace ".age" "" $in) } $lst
 }
 
 fn show {|name|
