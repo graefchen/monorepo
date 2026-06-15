@@ -10,33 +10,6 @@
     <script src="./lib/lite-yt-embed.js"></script>
 
     <link rel="stylesheet" href="style.css" />
-    <style>
-      .video-grid {
-        --size: 6;
-        display: grid;
-        grid-template-columns: repeat(var(--size), 1fr);
-        gap: 1rem;
-        padding: 1rem;
-      }
-      @media only screen and (max-width: 1441px) {
-        .video-grid {
-          --size: 4;
-        }
-      }
-      @media only screen and (max-width: 769px) {
-        .video-grid {
-          --size: 2;
-        }
-      }
-      @media only screen and (max-width: 426px) {
-        .video-grid {
-          --size: 1;
-        }
-      }
-      .video-grid lite-youtube {
-        border-radius: 12px;
-      }
-    </style>
   </head>
 
   <body>
