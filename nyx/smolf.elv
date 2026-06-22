@@ -32,7 +32,8 @@ var MAP = ( echo '{
     "z":   {"upper": " ▀█",    "lower": " █▄" },
     "-":   {"upper": " ▄▄",    "lower": " ░░" },
     "+":   {"upper": " ▄█▄",   "lower": " ░▀░" },
-    ".":   {"upper": " ░",     "lower": " ▄" }
+    ".":   {"upper": " ░",     "lower": " ▄" },
+    " ":   {"upper": "  ",     "lower": "  " }
 }' | from-json)
 
 fn smolf {|msg|
@@ -43,6 +44,7 @@ fn smolf {|msg|
         # only take the chars, that are in the table
         if (has-key $MAP $c) {
             var map = $MAP[$c]
+            # a weird hack to append chars to a string
             set upper = $upper""$map[upper]
             set lower = $lower""$map[lower]
         }

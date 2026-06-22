@@ -6,6 +6,14 @@ tiny archives inspired by [alexwlchan][]
   [alexwlchan]: https://alexwlchan.net
 
 
+lsw (lego star wars)
+--------------------
+
+just some number of [lego star wars][] sets i own
+
+  [lego star wars]: https://en.wikipedia.org/wiki/Lego_Star_Wars
+
+
 yt (youtube)
 ------------
 

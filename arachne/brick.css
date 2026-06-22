@@ -1,0 +1,87 @@
+/*
+ * █▄▄ █▀█ █ █▀▀ █▄▀
+ * █▄█ █▀▄ █ █▄▄ █░█.css
+ *
+ * colours found on:
+ * - https://swooshable.com/parts/colors
+ * - https://www.brickcolor.net
+ *
+ * just a small (8 items) selection of the
+ * brick colours, used by LEGO(tm).
+ *
+ */
+
+:root {
+	--white: #f4f4f4;
+	--black: #1b2a34;
+	--grey: #646464;
+	--light-grey: #969696;
+	--yellow: #fac80a;
+	--red: #b40000;
+	--blue: #1e5aa8;
+	--green: #00852b;
+}
+
+.white {
+	color: var(--white);
+}
+
+.white-bg {
+	background-color: var(--white);
+}
+
+.black {
+	color: var(--black);
+}
+
+.black-bg {
+	background-color: var(--black);
+}
+
+.grey {
+	color: var(--grey);
+}
+
+.grey-bg {
+	background-color: var(--grey);
+}
+
+.light-grey {
+	color: var(--light-grey);
+}
+
+.light-grey-bg {
+	background-color: var(--light-grey);
+}
+
+.yellow {
+	color: var(--yellow);
+}
+
+.yellow-bg {
+	background-color: var(--yellow);
+}
+
+.red {
+	color: var(--red);
+}
+
+.red-bg {
+	background-color: var(--red);
+}
+
+.blue {
+	color: var(--blue);
+}
+
+.blue-bg {
+	background-color: var(--blue);
+}
+
+.green {
+	color: var(--green);
+}
+
+.green-bg {
+	background-color: var(--green);
+}

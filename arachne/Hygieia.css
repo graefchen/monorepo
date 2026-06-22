@@ -1,0 +1,60 @@
+/*
+ * █░█ █▄█ █▀▀ █ █▀▀ █ ▄▀█
+ * █▀█ ░█░ █▄█ █ ██▄ █ █▀█.css
+ *
+ *                     (whatever that means)
+ * to have healthy and clean websites, inspired
+ * by the ancient greek goddess of the same name
+ * -- <https://en.wikipedia.org/wiki/Hygieia>
+ *
+ * primarily useful for checking if the website
+ * hasn't some stupid mistakes in it
+ *
+ * written to be used in a modern browser,
+ * with modern css
+ */
+ 
+:root {
+	/* colours used from:
+	 * <https://wiki.xxiivv.com/site/solresol.html>
+	 */
+	--warning-outline: 0.25rem solid #e16b1a;
+	--error-outline:   0.25rem solid #c40233;
+}
+
+@layer warnings {
+	:is(div > div > div > *) {
+		outline: var(--warning-outline);
+		--warning-many-diffs: "A lot of nesting with divs. Is that correct?";		
+	}
+
+	a:not([title]) {
+		outline: var(--warning-outline);
+		--warning-a-no-title: "The link doesn't have a title. Are you sure that this is ok?"
+	}
+
+	/*
+	 * only used allowed image formats, smaller list
+	 * just a warning, because it should be visually obvious
+	 */
+	img:not([src$=".avif"]),
+	img:not([src$=".jpeg"]),
+	img:not([src$=".jpg"]),
+	img:not([src$=".png"]),
+	img:not([src$=".svg"]),
+	img:not([src$=".webp"]) {
+		outline: var(--warning-outline);
+		--warning-no-optional-image-src: "It appears that you did not choose an optional format for you image";
+	}
+}
+
+@layer error {
+	a:not([href]) {
+		outline: var(--error-outline);
+		--error-href: "The link doesn't have a href. Did you mean somethin different?"
+	}
+	img:not([src]),img[src=""] {
+		outline: var(--error-outline);
+		--error-no-image-source: "The image does not appear to have any source.";
+	}
+}
