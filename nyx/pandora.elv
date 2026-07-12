@@ -50,8 +50,8 @@ fn delete {|name|
 
 fn list {||
 	var lst = [(e:ls -1 $dir)]
-
-	# TODO: (2026-06-05) Add comment
+	# First we get a list of all the age files in the directory, then we run
+	# remove the .age and then we echo it.
 	each {|in| echo (str:replace ".age" "" $in) } $lst
 }
 

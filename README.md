@@ -2,8 +2,7 @@ monorepo
 ========
 
 my personal (*and private*) monorepo,
-with many many meny different tools in it (*which are mostly website related*),
-but also are partly tools and scripts I use fot the command line.
+with many many many different tools in it.
 
 just full of a bunch of very different code-data things.
 
@@ -29,7 +28,7 @@ data, in the form of [csv][], [json][], etc.
 projects
 --------
 
-- arachne - waving the web (with css)
+- arachne - weaving the web (with css)
 - nyx - different scripts, predominantly in [elvish][]
 - tiny archives - websites with data
 
@@ -40,4 +39,5 @@ inpired by
 ----------
 
 1. <https://github.com/alexpdp7/alexpdp7>
+
 

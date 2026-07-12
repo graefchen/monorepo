@@ -6,7 +6,7 @@
  * - https://swooshable.com/parts/colors
  * - https://www.brickcolor.net
  *
- * just a small (8 items) selection of the
+ * just a small (10) selection of the
  * brick colours, used by LEGO(tm).
  *
  */
@@ -20,6 +20,9 @@
 	--red: #b40000;
 	--blue: #1e5aa8;
 	--green: #00852b;
+
+	--gold: #aa7f2e;
+	--silver: #8c8c8c;
 }
 
 .white {
@@ -85,3 +88,20 @@
 .green-bg {
 	background-color: var(--green);
 }
+
+.gold {
+	color: var(--gold);
+}
+
+.gold-bg {
+	background-color: var(--gold);
+}
+
+.silver {
+	color: var(--silver);
+}
+
+.silver-bg {
+	background-color: var(--silver);
+}
+
